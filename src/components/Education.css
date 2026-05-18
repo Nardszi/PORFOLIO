@@ -1,5 +1,5 @@
 .education {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(30, 41, 59, 0.5) 100%);
+  background: var(--primary);
 }
 
 .education-container {
@@ -9,20 +9,20 @@
 }
 
 .education-item {
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.05);
+  border: 2px solid var(--gold);
+  border-radius: 0;
   padding: 2rem;
   display: flex;
   gap: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .education-item:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.4);
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--gold);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
 }
 
 .education-icon {
@@ -31,26 +31,32 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
-  color: #60a5fa;
+  border-radius: 0;
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold);
   flex-shrink: 0;
+  border: 2px solid var(--gold);
 }
 
 .education-content h3 {
-  color: #f1f5f9;
+  color: var(--text);
   font-size: 1.3rem;
   margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .school {
-  color: #60a5fa;
+  color: var(--gold);
   font-weight: 600;
   margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 .location {
-  color: #cbd5e1;
+  color: var(--text-muted);
   font-size: 0.9rem;
   margin: 0 0 1rem 0;
 }
@@ -62,7 +68,7 @@
 }
 
 .education-details li {
-  color: #cbd5e1;
+  color: var(--text-muted);
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.75rem;
@@ -73,7 +79,7 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: var(--gold);
 }
 
 @media (max-width: 768px) {
