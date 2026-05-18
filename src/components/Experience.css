@@ -1,5 +1,5 @@
 .experience {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(30, 41, 59, 0.5) 100%);
+  background: #000000;
 }
 
 .experience-timeline {
@@ -15,7 +15,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, #3b82f6 0%, #1e40af 100%);
+  background: var(--gold);
 }
 
 .timeline-item {

@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(30, 41, 59, 0.5) 100%);
+  background: #000000;
 }
 
 .about-content {
@@ -10,9 +10,9 @@
 }
 
 .about-intro {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  line-height: 1.8;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.9;
   margin-bottom: 2rem;
 }
 
@@ -24,29 +24,33 @@
 }
 
 .highlight-card {
-  background: rgba(59, 130, 246, 0.05);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 0;
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .highlight-card:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.4);
-  transform: translateY(-5px);
+  background: rgba(212, 175, 55, 0.05);
+  border-color: var(--gold);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
 }
 
 .highlight-card h3 {
-  color: #60a5fa;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .highlight-card p {
-  color: #f1f5f9;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
 .highlight-card span {
@@ -61,12 +65,15 @@
 }
 
 .detail-item h4 {
-  color: #60a5fa;
+  color: var(--gold);
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .detail-item p {
-  color: #cbd5e1;
+  color: var(--text-muted);
 }
 
 .about-visual {
@@ -83,35 +90,33 @@
 }
 
 .stat-box {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
-  border: 2px solid rgba(59, 130, 246, 0.3);
-  border-radius: 16px;
+  background: transparent;
+  border: 2px solid var(--gold);
+  border-radius: 0;
   padding: 2rem;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
 }
 
 .stat-box:hover {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
-  border-color: rgba(59, 130, 246, 0.6);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--gold);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
 }
 
 .stat-number {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--gold);
 }
 
 .stat-label {
-  color: #cbd5e1;
-  margin-top: 0.5rem;
-  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1024px) {

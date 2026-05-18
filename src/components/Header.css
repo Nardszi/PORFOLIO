@@ -2,10 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(15, 23, 42, 0.95);
+  background-color: rgba(0, 0, 0, 0.98);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  padding: 1.2rem 2rem;
 }
 
 .header-content {
@@ -17,17 +17,17 @@
 }
 
 .logo a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transition: transform 0.3s ease;
+  color: var(--gold);
+  transition: all 0.4s ease;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .logo a:hover {
   transform: scale(1.05);
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
 }
 
 .nav ul {
@@ -37,10 +37,13 @@
 }
 
 .nav a {
-  color: #cbd5e1;
-  font-weight: 500;
+  color: var(--text-muted);
+  font-weight: 400;
   position: relative;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
 }
 
 .nav a::after {
@@ -50,8 +53,8 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
-  transition: width 0.3s ease;
+  background: var(--gold);
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .nav a:hover::after {
@@ -62,7 +65,7 @@
   display: none;
   background: none;
   border: none;
-  color: #cbd5e1;
+  color: var(--text-muted);
   font-size: 1.5rem;
 }
 

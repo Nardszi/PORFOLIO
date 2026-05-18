@@ -16,26 +16,24 @@ section {
 }
 
 section h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text);
   position: relative;
   display: inline-block;
+  letter-spacing: -1px;
 }
 
 section h2::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 0;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #3b82f6 0%, transparent 100%);
-  border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 0;
 }
 
 @media (max-width: 768px) {
